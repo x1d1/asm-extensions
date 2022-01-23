@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'me.lucas'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    asmVersion = '9.1'
+}
+
+dependencies {
+    compile "org.ow2.asm:asm:$asmVersion"
+    compile "org.ow2.asm:asm-tree:$asmVersion"
+    compile "org.ow2.asm:asm-commons:$asmVersion"
+    compile "org.ow2.asm:asm-util:$asmVersion"
+}
